@@ -1,0 +1,4 @@
+[submodule "decks/generative-inference"]
+	path = decks/generative-inference
+	url = https://github.com/mvarble/presentation-generative-inference.git
+	branch = presentations

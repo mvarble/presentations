@@ -1,0 +1,41 @@
+{
+  "name": "@mvarble/personal-website",
+  "author": "Matthew Varble",
+  "license": "MIT",
+  "scripts": {
+    "clean": "npx gatsby clean",
+    "develop": "export NODE_ENV=development; npx tailwindcss -c tailwind.config.js -o ./src/styles/tailwind.css -w & npx gatsby develop",
+    "build": "export NODE_ENV=production; npx tailwindcss -c tailwind.config.js -o ./src/styles/tailwind.css -m && npx gatsby build"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.2",
+    "@mdx-js/mdx": "^2.1.2",
+    "@mdx-js/react": "^2.1.2",
+    "@mvarble/gatsby-plugin-mdx-config": "*",
+    "@mvarble/gatsby-theme-presentations": "*",
+    "@mvarble/presentation-generative-inference": "*",
+    "gatsby": "^4.21.0",
+    "gatsby-plugin-mdx": "^4.0.0",
+    "gatsby-plugin-postcss": "^5.21.0",
+    "gatsby-source-filesystem": "^4.18.1",
+    "highlight.js": "^11.6.0",
+    "latex.css": "^1.7.1",
+    "path-browserify": "^1.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "victory": "^36.6.0",
+    "xstream": "^11.14.0",
+    "zustand": "^4.0.0"
+  },
+  "workspaces": [
+    "packages/*",
+    "decks/*"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "postcss": "^8.4.16",
+    "postcss-import": "^14.1.0",
+    "tailwind-children": "^0.5.0",
+    "tailwindcss": "^3.1.8"
+  }
+}
