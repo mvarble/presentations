@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Deploy
 
 on:
   push:
@@ -7,30 +7,16 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout master for build
       uses: actions/checkout@v3
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: 16.x
-        cache: 'npm'
-    - name: Install dependencies
-      run: npm ci
-    - name: Build website
-      run: npm run build
     - name: Upload build as artifact
       uses: actions/upload-artifact@master
       with:
         name: public
         path: ./public/
-    
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
     - name: Checkout Github Pages
       uses: actions/checkout@v3
       with:

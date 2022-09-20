@@ -1,6 +1,5 @@
 **/node_modules/
 .cache/
-public/
 drafts/
 **/dist/
 *.env
