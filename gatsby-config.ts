@@ -3,6 +3,7 @@ import { extendOptions } from '@mvarble/gatsby-plugin-mdx-config';
 import remarkToDeckSchema from '@mvarble/gatsby-theme-presentations/dist/remark-to-deck-schema';
 
 const config: GatsbyConfig = {
+  pathPrefix: '/presentations',
   plugins: [
     'gatsby-plugin-postcss',
     '@mvarble/gatsby-theme-presentations',
