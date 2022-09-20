@@ -9,6 +9,7 @@
     "watch": "npx babel -w src --out-dir dist/ --ignore \"**/__tests__\" --extensions \".ts,.tsx\""
   },
   "dependencies": {
+    "@mvarble/gatsby-plugin-mdx-config": "*",
     "lodash": "^4.17.21",
     "react-swipeable": "^7.0.0",
     "react-use-measure": "^2.1.1",
