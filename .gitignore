@@ -4,3 +4,4 @@ drafts/
 **/dist/
 *.env
 public/
+src/styles/tailwind.css
